@@ -2,7 +2,7 @@
 Vite setup for phoenix framework.   
 The goal of this approach is to touch phoenix project as less as possible.  
 
-First, `yarn add -D vite`, and this is all we need:  
+First, `yarn add -D vite chokidar`, and this is all we need:  
 
 
 ```diff
@@ -13,12 +13,11 @@ First, `yarn add -D vite`, and this is all we need:
    "license": "MIT",
    "scripts": {
 +    "build": "vite build",
-+    "watch": "vite build --watch --minify false --emptyOutDir false --clearScreen false --mode development"
++    "watch": "chokidar js css -c 'vite build --minify false --emptyOutDir false --clearScreen false --mode development'"
    },
    "devDependencies": {
      "autoprefixer": "^10.2.4",
-     "postcss": "^8.2.6",
-     "postcss-cli": "^8.3.1",
++    "chokidar-cli": "^2.1.0",
 +    "vite": "^2.2.4"
    }
  }

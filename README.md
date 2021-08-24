@@ -2,7 +2,7 @@
 Vite setup for phoenix framework.   
 The goal of this approach is to touch phoenix project as less as possible.  
 
-First, `yarn add -D vite chokidar`, and this is all we need:  
+First, `yarn add -D vite chokidar-cli`, and this is all we need:  
 
 
 ```diff
